@@ -1,5 +1,7 @@
 namespace Directory
 {
+    using AutoMapper;
+    using MediatR;
     using Microsoft.AspNetCore.Builder;
     using Microsoft.AspNetCore.Hosting;
     using Microsoft.AspNetCore.SpaServices.ReactDevelopmentServer;
@@ -26,6 +28,9 @@ namespace Directory
             {
                 configuration.RootPath = "ClientApp/build";
             });
+
+            services.AddMediatR(typeof(Startup).Assembly);
+            services.AddAutoMapper(typeof(Startup).Assembly);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
