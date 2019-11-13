@@ -1,4 +1,4 @@
-namespace Directory
+namespace Directory.Features.Weather
 {
     using System;
 

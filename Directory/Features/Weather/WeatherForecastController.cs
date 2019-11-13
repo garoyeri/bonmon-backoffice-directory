@@ -1,4 +1,4 @@
-﻿namespace Directory.Controllers
+﻿namespace Directory.Features.Weather
 {
     using System;
     using System.Collections.Generic;
